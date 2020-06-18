@@ -1,24 +1,65 @@
 const subMenu = document.querySelector(".menu-sub")
-const subMenuStyles = getComputedStyle(subMenu)
-
-console.log(subMenuStyles)
-
-console.log(subMenuStyles.visibility)
-
-// if (subMenuStyles.visibility === "hidden") {
-//     console.log("Sub menu is now visible")
-// }
-
-const overlay = document.createElement("div")
-overlay.setAttribute("class", "overlay")
 
 const linkOne = document.querySelector("#link-one")
+const linkTwo = document.querySelector("#link-two")
+const linkThree = document.querySelector("#link-three")
+const linkFour = document.querySelector("#link-four")
 
-// linkOne.addEventListener("mouseover", function (e) {
-//     console.log("mouse over")
-//     document.querySelector("body").appendChild(overlay)
-// })
+const subOne = document.querySelector("#sub-one")
+const subTwo = document.querySelector("#sub-two")
+const subThree = document.querySelector("#sub-three")
+const subFour = document.querySelector("#sub-four")
 
-subMenu.addEventListener("mouseleave", function (e) {
-    console.log("mouse leave")
+const overlay = document.querySelector(".overlay")
+
+linkOne.addEventListener("mouseover", function (e) {
+    console.log("mouse over")
+    overlay.classList.replace("hidden", "visible")
 })
+
+subOne.addEventListener("mouseleave", function (e) {
+    console.log("mouse leave")
+    overlay.classList.replace("visible", "hidden")
+})
+
+linkTwo.addEventListener("mouseover", function (e) {
+    console.log("mouse over")
+    overlay.classList.replace("hidden", "visible")
+})
+
+subTwo.addEventListener("mouseleave", function (e) {
+    console.log("mouse leave")
+    overlay.classList.replace("visible", "hidden")
+})
+
+linkThree.addEventListener("mouseover", function (e) {
+    console.log("mouse over")
+    overlay.classList.replace("hidden", "visible")
+})
+
+subThree.addEventListener("mouseleave", function (e) {
+    console.log("mouse leave")
+    overlay.classList.replace("visible", "hidden")
+})
+
+linkFour.addEventListener("mouseover", function (e) {
+    console.log("mouse over")
+    overlay.classList.replace("hidden", "visible")
+})
+
+subFour.addEventListener("mouseleave", function (e) {
+    console.log("mouse leave")
+    overlay.classList.replace("visible", "hidden")
+})
+
+document.querySelector("html").addEventListener("mouseleave", function (e) {
+    console.log("mouse leave")
+    overlay.classList.replace("visible", "hidden")
+})
+
+// Previous working version with only one link
+
+// subMenu.addEventListener("mouseleave", function (e) {
+//     console.log("mouse leave")
+//     overlay.classList.replace("visible", "hidden")
+// })
