@@ -73,7 +73,9 @@ ul {
 
 /* HEADER ===========================================*/
 
-
+header {
+    background-color: #e2eff9;
+}
 
 /* MENU =============================================*/
 
@@ -188,6 +190,10 @@ main {
 footer {
     padding-bottom: 1rem;
     text-align: center;
+}
+
+footer a {
+    color: #006fbe;
 }
 
 /* SECTION NAME =====================================*/
