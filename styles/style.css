@@ -1,0 +1,233 @@
+/* BOX SIZING & RESET ===============================*/
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* RESPONSIVE IMAGES ================================*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CUSTOM PROPERTIES ================================*/
+
+:root {
+    --main-bg-color: #;
+    --main-txt-color: #374047;
+    --primary-color: #;
+    --secondary-color: #;
+    --tertiary-color: #;
+    --light-grey-color: #FAFAFA;
+    --dark-grey-color: #424242;
+
+    --container-width: 1200px;
+	
+	--default-font-size: 16px;
+	--xs-font-size: 0.64rem;
+	--sm-font-size: 0.8rem;
+	--l1-font-size: 1.25rem;
+	--l2-font-size: 1.563rem;
+	--l3-font-size: 1.953rem;
+	--l4-font-size: 2.441rem;
+	--l5-font-size: 3.052rem;
+}
+
+/* MAIN STYLING =====================================*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    color: var(--main-txt-color)
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+/*===================================================*/
+/* SECTIONS =========================================*/
+/*===================================================*/
+
+/* HEADER ===========================================*/
+
+
+
+/* MENU =============================================*/
+
+nav {
+    z-index: 9;
+}
+
+.menu-main {
+    position: relative;
+    display: flex;
+}
+
+.menu-main li {
+    display: inline-block;
+}
+
+.menu-main a {
+    color: var(--main-txt-color);
+    text-decoration: none;
+    display: block;
+    padding: 1rem var(--l2-font-size);
+    transition: all 0.1s;
+}
+
+.menu-main li:hover {
+    background-color: #006fbe;
+    transition: all 0.6s;
+}
+
+.menu-main li:hover a {
+    color: #f9f9fa;
+    transition: all 0.3s;
+}
+
+.menu-sub {
+    position: absolute;
+    left: 0;
+    background-color: #006fbe;
+    color: #f9f9fa;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    padding: var(--l1-font-size);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    transition: all 0.3s;
+}
+
+.menu-category {
+    font-size: var(--l1-font-size);
+    margin-bottom: var(--xs-font-size);
+}
+
+.menu-sub li {
+    display: block;
+}
+
+.menu-sub a {
+    display: inline-block;
+    color: #f9f9fa;
+    padding: 0;
+}
+
+.menu-main li:hover .menu-sub {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.menu-sub a:hover {
+    text-decoration: underline;
+}
+
+.menu-sub-col .menu-category:nth-last-of-type(1) {
+    margin-top: var(--l3-font-size);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+/* MAIN =============================================*/
+
+main {
+    display: grid;
+    place-items: center;
+    color: #006fbe;
+}
+
+/* FOOTER ===========================================*/
+
+footer {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/* SECTION NAME =====================================*/
+
+
+
+/* SECTION NAME =====================================*/
+
+
+
+/* SECTION NAME =====================================*/
+
+
+
+/* SECTION NAME =====================================*/
+
+
+
+/* SECTION NAME =====================================*/
+
+
+
+/*==================================================*/
+/*==================================================*/
+/* MEDIA QUERIES - TABLET LANDSCAPE 1024px =========*/
+
+@media only screen and (max-width: 1024px) {
+    
+
+
+}
+
+/*==================================================*/
+/* MEDIA QUERIES - TABLET PORTRAIT 768px ===========*/
+
+@media only screen and (max-width: 768px) {
+    
+
+
+}
+
+/*==================================================*/
+/* MEDIA QUERIES - MOBILE 544px ====================*/
+
+@media only screen and (max-width: 544px) {
+    
+
+
+}
