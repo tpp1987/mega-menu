@@ -78,11 +78,11 @@ ul {
 /* MENU =============================================*/
 
 nav {
-    z-index: 9;
+    position: relative;
 }
 
 .menu-main {
-    position: relative;
+    width: max-content;
     display: flex;
 }
 
